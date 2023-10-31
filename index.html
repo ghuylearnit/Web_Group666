@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Bán Trà Sữa Phúc Long</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // JavaScript để hiển thị sản phẩm khi rê chuột vào các thanh chữ
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuItems = document.querySelectorAll(".menu-item");
+
+            menuItems.forEach(function (item) {
+                item.addEventListener("mouseover", function () {
+                    this.classList.add("active");
+                });
+
+                item.addEventListener("mouseout", function () {
+                    this.classList.remove("active");
+                });
+            });
+        });
+
+        navigationLinks.forEach(function (link) {
+            link.addEventListener("mouseover", function () {
+                var category = this.textContent.trim();
+                var productList = products[category];
+                var productHtml = productList.map(function (product) {
+                    return "<li>" + product + "</li>";
+                }).join("");
+                document.getElementById("product-list").innerHTML = productHtml;
+            });
+
+            link.addEventListener("mouseout", function () {
+                document.getElementById("product-list").innerHTML = "";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.jpg" alt="Phúc Long" width="100%">
+        </div>
+        <div class="navigation">
+            <a href="#" class="menu-item">Trang chủ</a>
+            <a href="#" class="menu-item">Cà phê</a>
+            <a href="#" class="menu-item">Trà</a>
+            <a href="#" class="menu-item">Thức uống</a>
+            <a href="#" class="menu-item">Sản phẩm</a>
+            <a href="#" class="menu-item">Khuyến mãi</a>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Tìm kiếm" name="search">
+                    <input type="submit" value="Tìm">
+                </form>
+            </div> 
+        </div>
+    </div>
+    <div>
+        <img src="osmanthus.jpg" height="500px" width="1465x">
+    </div>
+    <div class="image-with-caption">
+        <div>
+            <img src="tragioithieu.jpg" height="500px" width="500px">
+        </div>
+        <h1 class="nd">FROM THE TEA SPROUTS, WE CREATE PASSION</h1>
+        <div class="caption" style="font-size: large;">
+            <p class="call-text"> After 50 years of experience growing and developing the highest quality of tea leaves
+                and coffee beans coupled with our devotion to providing memorable customer experience,
+                Phuc Long has earned the reputation as a pioneer brand having many creative ideas for the coffee and tea
+                industry. <br>
+We constantly strive to create the highest quality of tea and coffee products through ceaseless effort
+                and passion.
+                We are truly connected to and contribute deeply to the Vietnam's longstanding culture of drinking coffee
+                and tea.
+            </p>
+        </div>
+    </div>
+    <div class="image-with-caption2">
+        <div>
+            <img src="nhanvien.jpg" height="400px" width="350px">
+        </div>
+        <h1 class="nd">THE STAFF TEAM IS FULL OF ENTHUSIASM</h1>
+        <div class="caption2" style="font-size: large;">
+            <p class="call-text2">During the process of operation and development, Phuc Long Coffee & Tea's management
+                team and staff,
+                for generations,
+                have built and nurtured the passion for tea and coffee with the desire to challenge themselves in the
+                dynamic and creative service F&B.
+            </p>
+        </div>
+    </div>
+    <div id="product-list"></div>
+    <div class="menu-section">
+            <div class="content-section">
+                <h2 class="section-heading text-white">THỨC UỐNG</h2>
+            </div>
+            <div class="tea-list">
+                <div class="tea-item">
+                    <img src="hongtracaramel.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Hồng trà Caramel</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="hongtracarameldaxay.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Hồng trà Caramel đá xay</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="nhandaxay.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Trà nhãn đá xay</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="traolongduacaramel.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Ô long caramel sữa dừa</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="oreocaphesuadaxay.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Oreo Cà Phê Sữa Đá Xay</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="trasuaberryberry.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Trà Sữa Berry Berry</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="caphedaxay.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Cà Phê Đá Xay</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="tradaodaxay.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Trà Đào Đá Xay</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="cappuccino.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Cappuccino</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="latte.png" alt="" class="tea-img" >
+                    <div class="tea-body">
+                        <h3  class="tea-heading" >Latte</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="hongtrasua.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Hồng Trà Sữa</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+                <div class="tea-item">
+                    <img src="traolongdau.png" alt="" class="tea-img">
+                    <div class="tea-body">
+                        <h3 class="tea-heading">Trà Ô Long Dâu</h3>
+                        <p class="tea-price">70.000đ</p>
+                        <a href="#" class="tea-buy-btn">Đặt Hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <footer>
+<p>Web Bán Trà Sữa Phúc Long &copy; 2023. All rights reserved. | <a href="#">Liên hệ</a></p>
+    </footer>
+
+</body>
+
+</html>

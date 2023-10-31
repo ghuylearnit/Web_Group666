@@ -1,0 +1,202 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(118, 191, 118);
+}
+.logo {
+  width: 150px;
+}
+
+.navigation {
+  display: flex;
+    align-items: center;
+    overflow: auto; /* Cho phép cuộn khi nội dung vượt quá kích thước */
+    max-height: 50px;
+    overflow-y: scroll;  /* Đặt chiều cao tối đa cho thanh chữ */
+    /* Các thuộc tính CSS khác cho phần navigation */
+}
+
+.navigation a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.navigation a:hover {
+  font-weight: bold;
+}
+
+.navigation .active {
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.search-container input[type="text"] {
+  width: 200px;
+  padding: 5px;
+}
+
+.search-container input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền ẩn mờ - ở đây là một màu đen có độ trong suốt 50% */
+  z-index: -1; /* Đẩy phần tử ẩn mờ phía sau */
+}
+/* CSS cho phần content */
+.content {
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+}
+/*css cho phần chữ và ảnh*/
+
+.image-with-caption {
+  display: flex;
+  align-items: center;
+}
+
+.image-with-caption img {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.caption {
+  flex: 1 1 auto;
+}
+
+.caption-text {
+  font-style: italic;
+  text-align: right;
+}
+.image-with-caption2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.caption2 {
+  flex: 1 1 auto;
+}
+
+.call-text2 {
+  font-size: large;
+}
+/* CSS cho phần footer */
+footer {
+  background-color: rgb(118, 191, 118) ;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+/*css cua san pham*/
+.clear {
+  clear: both;
+}
+.text-white {
+  color: white !important;
+} 
+.menu-section {
+  background-color: rgb(118, 191, 118)
+}
+.section-heading {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-size: 35px;
+  font-style: initial;
+  word-spacing: 10px;
+}
+.tea-list {
+  
+  margin-left: 50px;
+}
+.tea-item {
+  
+  float: left;
+  width: 25%;
+  background-color:rgb(118, 191, 118) ;
+}
+.tea-img {
+  width: 50%;
+  margin-top: 10px;
+}
+.tea-img:hover {
+  opacity: 0.6;
+}
+.options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.menu-item:hover + .options,
+.options:hover {
+  display: block;
+}
+.tea-price {
+  font-size: 20px;
+  color: rgb(226, 250, 134);
+  margin-left: 45px;
+}
+.tea-heading {
+  font-size: 20px;
+  font-weight: 1200;
+  
+}
+.tea-buy-btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-left: 38px;
+  
+}
+.tea-buy-btn:hover {
+  color: #000;
+  background-color: #ccc;
+
+}
